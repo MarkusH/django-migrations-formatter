@@ -1,0 +1,10 @@
+*.egg-info
+*.py[cod]
+*$py.class
+__pycache__
+build
+dist
+.eggs
+.DS_Store
+.tox
+.vscode
