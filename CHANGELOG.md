@@ -2,6 +2,10 @@
 
 ## Under development
 
+## 0.1.3 (2021-04-02)
+
+* Another shot at a single-file GitHub workflow
+
 ## 0.1.2 (2021-04-02)
 
 * Fix release building
