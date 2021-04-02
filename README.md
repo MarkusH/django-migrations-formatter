@@ -1,6 +1,6 @@
 # django-migrations-formatter
 
-[![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/MarkusH/django-migrations-formatter/Lint%20&%20Test/main?style=for-the-badge)](https://github.com/MarkusH/django-migrations-formatter/actions?query=branch%3Amain+event%3Apush)
+[![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/MarkusH/django-migrations-formatter/Test%20&%20Deploy/main?style=for-the-badge)](https://github.com/MarkusH/django-migrations-formatter/actions?query=branch%3Amain+event%3Apush)
 [![Codecov branch](https://img.shields.io/codecov/c/gh/MarkusH/django-migrations-formatter/main?style=for-the-badge)](https://app.codecov.io/gh/MarkusH/django-migrations-formatter/branch/main)
 [![Version](https://img.shields.io/pypi/v/django-migrations-formatter?label=Version&style=for-the-badge)](https://pypi.org/project/django-migrations-formatter/)
 ![License](https://img.shields.io/pypi/l/django-migrations-formatter?style=for-the-badge)
