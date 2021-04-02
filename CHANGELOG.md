@@ -2,6 +2,8 @@
 
 ## Under development
 
+## 0.1.2 (2021-04-02)
+
 ## 0.1.1 (2021-04-02)
 
 * Use [pre-commit.ci](https://results.pre-commit.ci/repo/github/351587462) for linting
