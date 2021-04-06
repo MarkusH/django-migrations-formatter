@@ -2,6 +2,10 @@
 
 ## Under development
 
+## 0.1.4 (2021-04-06)
+
+* Add explicit support for Django 3.2
+
 ## 0.1.3 (2021-04-02)
 
 * Another shot at a single-file GitHub workflow
