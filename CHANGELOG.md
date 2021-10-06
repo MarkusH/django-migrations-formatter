@@ -2,6 +2,8 @@
 
 ## Under development
 
+* Add explicit support for Django 4.0 and Python 3.10
+
 ## 0.1.4 (2021-04-06)
 
 * Add explicit support for Django 3.2
