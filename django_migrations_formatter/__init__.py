@@ -16,7 +16,7 @@ else:
 
 
 def format_black(self, content):
-    if not hasattr(black, 'find_pyproject_toml'):
+    if not hasattr(black, "find_pyproject_toml"):
         config = {}
     else:
         config_file = black.find_pyproject_toml((self.basedir,))
