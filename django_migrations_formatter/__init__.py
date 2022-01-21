@@ -16,15 +16,11 @@ else:
 
 
 def format_black(self, content):
-    if not hasattr(black, "find_pyproject_toml"):
-        config = {}
-    else:
+    config = {}
+    if hasattr(black, "find_pyproject_toml"):
         config_file = black.find_pyproject_toml((self.basedir,))
         if config_file:
             config = black.parse_pyproject_toml(config_file)
-        else:
-            config = {}
-
     versions = config.get("target_version", [])
     mode = black.Mode(
         target_versions=[black.TargetVersion[val.upper()] for val in versions],
