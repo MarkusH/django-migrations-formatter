@@ -52,7 +52,7 @@ and push. To set it up:
 To run the unit tests:
 
 ```console
-(env)$ django-admin.py test -v 2 --settings=tests.settings
+(env)$ django-admin test --pythonpath . -v 2 --settings=tests.settings
 ```
 
 If you spot an problem, please [open an issue](https://github.com/MarkusH/django-migrations-formatter/issues/new)

@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=42", "wheel", "setuptools_scm[toml]>=5,<6"]
+requires = ["setuptools>=45", "wheel", "setuptools_scm[toml]>=6,<7"]
 
 [tool.black]
 target-version = ['py38']
