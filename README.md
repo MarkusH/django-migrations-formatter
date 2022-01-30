@@ -19,7 +19,12 @@ Start by installing `django-migrations-formatter` from PyPI:
 ```
 
 You will also need to make sure to have `black` and/or `isort` installed.
-Without them, this library doesn't provide any value.
+Without them, this library doesn't provide any value. For ease of use, you can
+install either of them by including them as "extras" during the installation.
+
+```console
+(env)$ python -m pip install "django-migrations-formatter[black,isort]"
+```
 
 Then you need to add `django_migrations_formatter.apps.MigrationsFormatter` to
 your `INSTALLED_APPS`:
@@ -40,7 +45,7 @@ combined into [pre-commit](https://pre-commit.com/) to run before each commit
 and push. To set it up:
 
 ```console
-(env)$ python -m pip install '.[dev,test]'
+(env)$ python -m pip install '.[black,dev,isort,test]'
 (env)$ pre-commit install -t pre-commit -t pre-push --install-hooks
 ```
 

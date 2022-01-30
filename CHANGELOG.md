@@ -2,6 +2,12 @@
 
 ## Under development
 
+- A minimum version of `black>=22.1.0` is required.
+
+- Added the `black` and `isort` installation extras. One can now automatically
+  install black and isort with `python -m pip install
+  "django-migrations-formatter[black,isort]"`.
+
 ## 0.1.5 (2021-10-06)
 
 * Add explicit support for Django 4.0 and Python 3.10
