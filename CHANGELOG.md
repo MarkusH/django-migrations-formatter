@@ -2,6 +2,8 @@
 
 ## Under development
 
+## 1.0.0 (2022-01-30)
+
 - Removed support for Python 3.6.
 
 - Removed support for Django 3.0 and 3.1.
