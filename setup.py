@@ -34,7 +34,7 @@ setuptools.setup(
             "Django",
         ],
     },
-    setup_requires=["setuptools_scm>=5<6"],
+    setup_requires=["setuptools_scm>=6<7"],
     use_scm_version=True,
     classifiers=[
         "Development Status :: 3 - Alpha",
