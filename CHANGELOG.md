@@ -2,6 +2,8 @@
 
 ## Under development
 
+- Removed support for Django 3.0 and 3.1.
+
 - A minimum version of `black>=22.1.0` is required.
 
 - Added the `black` and `isort` installation extras. One can now automatically
