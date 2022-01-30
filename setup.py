@@ -30,7 +30,7 @@ setuptools.setup(
             "isort",
         ],
         "test": [
-            "coverage[toml]>=5,<6",
+            "coverage[toml]>=6,<7",
             "Django",
         ],
     },
