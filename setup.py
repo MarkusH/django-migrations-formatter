@@ -22,12 +22,16 @@ setuptools.setup(
     ),
     include_package_data=True,
     extras_require={
+        "black": [
+            "black>=22.1.0",
+        ],
         "dev": ["pre-commit"],
+        "isort": [
+            "isort",
+        ],
         "test": [
             "coverage[toml]>=5,<6",
             "Django",
-            "black",
-            "isort",
         ],
     },
     setup_requires=["setuptools_scm>=5<6"],

@@ -2,6 +2,7 @@ from django.db.migrations.writer import MigrationWriter
 
 try:
     import black
+    import black.const
 except ImportError:  # pragma: no cover
     BLACK_INSTALLED = False
 else:
@@ -23,8 +24,8 @@ def format_black(self, content):
         config = {}
     versions = config.get("target_version", [])
     mode = black.Mode(
-        target_versions=[black.TargetVersion[val.upper()] for val in versions],
-        line_length=config.get("line_length") or black.Mode.line_length,
+        target_versions={black.TargetVersion[val.upper()] for val in versions},
+        line_length=config.get("line_length") or black.const.DEFAULT_LINE_LENGTH,
         string_normalization=not config.get("skip_string_normalization"),
         experimental_string_processing=bool(
             config.get("experimental_string_processing")

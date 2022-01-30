@@ -48,7 +48,7 @@ jobs:
         run: |
           python -m pip install -U pip
           python -m pip install Django~=${{ matrix.django-version }}
-          python -m pip install '.[test]'
+          python -m pip install '.[black,isort,test]'
       - name: Run tests
         run: |
           coverage run "$(command -v django-admin)" test --pythonpath . -v 2 --settings=tests.settings
