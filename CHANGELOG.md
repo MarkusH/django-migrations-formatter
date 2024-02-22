@@ -2,6 +2,8 @@
 
 ## Under development
 
+- Remove support for Python 3.7
+
 ## 1.0.0 (2022-01-30)
 
 - Removed support for Python 3.6.
