@@ -34,7 +34,7 @@ setuptools.setup(
             "Django",
         ],
     },
-    setup_requires=["setuptools_scm>=6<7"],
+    setup_requires=["setuptools_scm>=6,<7"],
     use_scm_version=True,
     classifiers=[
         "Development Status :: 3 - Alpha",
@@ -48,10 +48,9 @@ setuptools.setup(
         "Operating System :: OS Independent",
         "Programming Language :: Python",
         "Programming Language :: Python :: 3",
-        "Programming Language :: Python :: 3.7",
         "Programming Language :: Python :: 3.8",
         "Programming Language :: Python :: 3.9",
         "Programming Language :: Python :: 3.10",
     ],
-    python_requires=">=3.7",
+    python_requires=">=3.8",
 )
