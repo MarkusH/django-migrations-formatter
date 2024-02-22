@@ -27,9 +27,6 @@ def format_black(self, content):
         target_versions={black.TargetVersion[val.upper()] for val in versions},
         line_length=config.get("line_length") or black.const.DEFAULT_LINE_LENGTH,
         string_normalization=not config.get("skip_string_normalization"),
-        experimental_string_processing=bool(
-            config.get("experimental_string_processing")
-        ),
         is_pyi=bool(config.get("pyi")),
     )
     return black.format_str(content, mode=mode)
