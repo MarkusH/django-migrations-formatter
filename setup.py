@@ -22,13 +22,6 @@ setuptools.setup(
     ),
     include_package_data=True,
     extras_require={
-        "black": [
-            "black>=22.1.0",
-        ],
-        "dev": ["pre-commit"],
-        "isort": [
-            "isort",
-        ],
         "test": [
             "coverage[toml]>=6,<7",
             "Django",
