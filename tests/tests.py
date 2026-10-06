@@ -59,8 +59,7 @@ class TestMigrationWriter(SimpleTestCase):
     def test_black_and_isort(self):
         writer = MigrationWriter(self.get_migration())
         output = writer.as_string()
-        expected = textwrap.dedent(
-            """
+        expected = textwrap.dedent("""
                 import datetime
 
                 from django.db import migrations, models
@@ -120,8 +119,7 @@ class TestMigrationWriter(SimpleTestCase):
                             field=models.DateTimeField(default=datetime.datetime.utcnow),
                         ),
                     ]
-            """  # noqa
-        )
+            """)  # noqa
         self.assertInOutput(expected, output)
 
     def test_only_black(self):
@@ -134,8 +132,7 @@ class TestMigrationWriter(SimpleTestCase):
             # In that case, we mock the config here to be different to the
             # default one (e.g. 100 vs 88 chars per line)
             output = writer.as_string()
-        expected = textwrap.dedent(
-            """
+        expected = textwrap.dedent("""
                 import datetime
                 from django.db import migrations, models
 
@@ -185,8 +182,7 @@ class TestMigrationWriter(SimpleTestCase):
                             field=models.DateTimeField(default=datetime.datetime.utcnow),
                         ),
                     ]
-            """  # noqa
-        )
+            """)  # noqa
         self.assertInOutput(expected, output)
 
     def test_only_black_without_config(self):
@@ -194,8 +190,7 @@ class TestMigrationWriter(SimpleTestCase):
         writer._isort_installed = False
         with mock.patch("black.find_pyproject_toml", return_value=None):
             output = writer.as_string()
-        expected = textwrap.dedent(
-            """
+        expected = textwrap.dedent("""
                 import datetime
                 from django.db import migrations, models
 
@@ -254,16 +249,14 @@ class TestMigrationWriter(SimpleTestCase):
                             field=models.DateTimeField(default=datetime.datetime.utcnow),
                         ),
                     ]
-            """  # noqa
-        )
+            """)  # noqa
         self.assertInOutput(expected, output)
 
     def test_only_isort(self):
         writer = MigrationWriter(self.get_migration())
         writer._black_installed = False
         output = writer.as_string()
-        expected = textwrap.dedent(
-            """
+        expected = textwrap.dedent("""
                 import datetime
 
                 from django.db import migrations, models
@@ -314,8 +307,7 @@ class TestMigrationWriter(SimpleTestCase):
                             field=models.DateTimeField(default=datetime.datetime.utcnow),
                         ),
                     ]
-            """  # noqa
-        )
+            """)  # noqa
         self.assertInOutput(expected, output)
 
     def test_neither_installed(self):
@@ -323,8 +315,7 @@ class TestMigrationWriter(SimpleTestCase):
         writer._black_installed = False
         writer._isort_installed = False
         output = writer.as_string()
-        expected = textwrap.dedent(
-            """
+        expected = textwrap.dedent("""
                 import datetime
                 from django.db import migrations, models
 
@@ -374,6 +365,5 @@ class TestMigrationWriter(SimpleTestCase):
                             field=models.DateTimeField(default=datetime.datetime.utcnow),
                         ),
                     ]
-            """  # noqa
-        )
+            """)  # noqa
         self.assertInOutput(expected, output)
